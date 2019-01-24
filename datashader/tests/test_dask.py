@@ -423,7 +423,6 @@ def test_trimesh_dask_partitions(npartitions):
     double-drawn, the edge is only drawn for the rightmost (or bottommost)
     triangle.
     """
-    import multiprocessing as mp
     # Test left/right edge shared
     verts = dd.from_pandas(pd.DataFrame({'x': [4, 1, 5, 5, 5, 4],
                                          'y': [4, 5, 5, 5, 4, 4]}),
